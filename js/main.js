@@ -12,10 +12,10 @@ const interval = setInterval(() => {
     const distance = launchDate - now;
 
     // Time calcs
-    const days = Math.floor(distance / (1000*60*60*24));
-    const hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
-    const mins = Math.floor((distance % (1000*60*60)) / (1000*60));
-    const seconds = Math.floor((distance % (1000*60)) / (1000));
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / (1000));
 
     // Display result
     countdown.innerHTML = `
@@ -26,7 +26,7 @@ const interval = setInterval(() => {
     `;
 
     // Check if past launch
-    if(distance < 0){
+    if (distance < 0) {
         // Stop countdown
         clearInterval(interval);
         // Style and output text
